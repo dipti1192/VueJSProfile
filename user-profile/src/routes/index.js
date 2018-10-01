@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Home from '@/components/HomePage.vue'
-import HelloWorld from '@/components/HelloWorld.vue'
+import HeaderBar from '@/components/HeaderBar.vue'
 import Router from 'vue-router'
 Vue.use(Router)
 
@@ -13,8 +13,8 @@ export default new Router({
     },
     {
       path: '/hello',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'HeaderBar',
+      component: HeaderBar
     }
   ],
   mode:'history',

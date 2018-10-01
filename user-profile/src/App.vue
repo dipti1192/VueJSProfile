@@ -1,6 +1,6 @@
 <template>
   <v-container id="app">
-    <HelloWorld style="width:100%;height:100%;position:fixed;z-index:1"></HelloWorld>
+    <HeaderBar style="width:100%;height:100%;position:fixed;z-index:1"></HeaderBar>
     <router-view style="padding:15px;position: absolute;width:100%;height:100%;">
     </router-view>
     <!--<footer>
@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import HeaderBar from './components/HeaderBar.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    HeaderBar,
   },
 };
 </script>

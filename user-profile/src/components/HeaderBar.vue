@@ -73,7 +73,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'HeaderBar',
   props: {
     msg: String,
   },
@@ -82,6 +82,7 @@ export default {
       drawer: null,
       items: [
         { title: 'Home', icon: 'dashboard', path:'/home'},
+        { title: 'Photography', icon: 'photo_camera', path:'/photos' },
         { title: 'About', icon: 'question_answer', path:'/about' }
       ]
     }
