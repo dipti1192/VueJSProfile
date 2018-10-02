@@ -69,19 +69,16 @@
 </v-flex>
 </template>
 
-
-
 <script>
 export default {
   name: 'HeaderBar',
-  props: {
-    msg: String,
-  },
   data () {
     return {
       drawer: null,
       items: [
         { title: 'Home', icon: 'dashboard', path:'/home'},
+        { title: 'Birthday', icon: 'cake', path:'/happy-birthday' },
+        { title: 'Friends', icon: 'people', path:'/friends' },
         { title: 'Photography', icon: 'photo_camera', path:'/photos' },
         { title: 'About', icon: 'question_answer', path:'/about' }
       ]
@@ -89,7 +86,7 @@ export default {
   },
   methods:{
     redirectToPage(page){
-      this.$router.push(page)
+      return this.$router.push(page)
     }
   }
 };
