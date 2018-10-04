@@ -1,7 +1,6 @@
-
 <template>
   <!--<v-container>-->
-    <v-layout> 
+    <div style="padding:50px;width:100%;height:100%"> 
 		<div class="loading"></div>
 		<audio class="song" controls loop>
 			<source src="hbd.mp3"></source>
@@ -27,7 +26,7 @@
 		</div>
 		
 		<img src="../assets/Balloon-Border.png" width="100%" class="balloon-border">
-		<div class="container">
+		<div class="containers">
 			<div class="row">
 				<div class="col-md-2 col-xs-2 bulb-holder">
 					<div class="bulb" id="bulb_yellow"></div>
@@ -138,28 +137,25 @@
 				
 			</div>
 		</div>
-</v-layout>
+</div>
 </template>
-
-<script>
+ <script>
 export default {
-  name: 'Birthday',
+  name: 'HomePage',
   props: {
     msg: String
   },
   created(){
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-58229732-1', 'auto');
-		ga('send', 'pageview');
+    // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		// (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		// m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		// })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 		// ga('create', 'UA-58229732-1', 'auto');
+		// ga('send', 'pageview');
     }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+ <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .box{
 	background-color: blue;
@@ -179,8 +175,7 @@ export default {
   bottom: 0;
   right: 0;
 }
-
-/* Transparent Overlay */
+ /* Transparent Overlay */
 .loading:before {
   content: '';
   display: block;
@@ -191,8 +186,7 @@ export default {
   height: 100%;
   background-color: rgba(0,0,0,0.3);
 }
-
-/* :not(:required) hides these rules from IE9 and below */
+ /* :not(:required) hides these rules from IE9 and below */
 .loading:not(:required) {
   /* hide "loading..." text */
   font: 0/0 a;
@@ -201,8 +195,7 @@ export default {
   background-color: transparent;
   border: 0;
 }
-
-.loading:not(:required):after {
+ .loading:not(:required):after {
   content: '';
   display: block;
   font-size: 10px;
@@ -218,10 +211,8 @@ export default {
   -webkit-box-shadow: #FFF 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, #FFF -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
   box-shadow: #FFF 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, #FFF -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
 }
-
-/* Animation */
-
-@-webkit-keyframes spinner {
+ /* Animation */
+ @-webkit-keyframes spinner {
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -296,8 +287,7 @@ export default {
 	-ms-animation:peach_alive linear 8s infinite;
 	animation:peach_alive linear 8s infinite;
 }
-
-@-webkit-keyframes peach_alive {
+ @-webkit-keyframes peach_alive {
 	0%{
 		background-color: #FFDAB9;
 	}
@@ -331,8 +321,7 @@ export default {
 		background-color: #FFDAB9;
 	}
 }
-
-@-o-keyframes peach_alive {
+ @-o-keyframes peach_alive {
 	0%{
 		background-color: #FFDAB9;
 	}
@@ -349,8 +338,7 @@ export default {
 		background-color: #FFDAB9;
 	}
 }
-
-@-ms-keyframes peach_alive {
+ @-ms-keyframes peach_alive {
 	0%{
 		background-color: #FFDAB9;
 	}
@@ -367,8 +355,7 @@ export default {
 		background-color: #FFDAB9;
 	}
 }
-
-@keyframes peach_alive {
+ @keyframes peach_alive {
 	0%{
 		background-color: #FFDAB9;
 	}
@@ -385,9 +372,7 @@ export default {
 		background-color: #FFDAB9;
 	}
 }
-
-
-.bulb {
+ .bulb {
 	width: 50px;
 	height: 50px;
 	margin: auto;
@@ -395,12 +380,10 @@ export default {
 	background-position:center 0px;
 	background-size: 50px 50px;
 }
-
-.bulb-holder {
+ .bulb-holder {
 	height: 70px;
 }
-
-.bulb-glow-yellow {
+ .bulb-glow-yellow {
 	background-image: url('../assets/bulb_yellow.png');
 	-webkit-animation: bulb_glow_yellow linear 5s;
 	-moz-animation: bulb_glow_yellow linear 5s;
@@ -408,8 +391,7 @@ export default {
 	-ms-animation: bulb_glow_yellow linear 5s;
 	animation: bulb_glow_yellow linear 5s;
 }
-
-@-webkit-keyframes bulb_glow_yellow {
+ @-webkit-keyframes bulb_glow_yellow {
 	0%{
 		background-image: url('../assets/bulb.png');
 		opacity: 0;
@@ -474,8 +456,7 @@ export default {
 		opacity: 1;
 	}
 }
-
-.bulb-glow-red {
+ .bulb-glow-red {
 	background-image: url('../assets/bulb_red.png');
 	-webkit-animation: bulb_glow_red linear 5s;
 	-moz-animation: bulb_glow_red linear 5s;
@@ -483,8 +464,7 @@ export default {
 	-ms-animation: bulb_glow_red linear 5s;
 	animation: bulb_glow_red linear 5s;
 }
-
-@-webkit-keyframes bulb_glow_red {
+ @-webkit-keyframes bulb_glow_red {
 	0%{
 		background-image: url('../assets/bulb.png');
 		opacity: 0;
@@ -557,8 +537,7 @@ export default {
 	-ms-animation: bulb_glow_blue linear 5s;
 	animation: bulb_glow_blue linear 5s;
 }
-
-@-webkit-keyframes bulb_glow_blue {
+ @-webkit-keyframes bulb_glow_blue {
 	0%{
 		background-image: url('../assets/bulb.png');
 		opacity: 0;
@@ -623,8 +602,7 @@ export default {
 		opacity: 1;
 	}
 }
-
-.bulb-glow-green {
+ .bulb-glow-green {
 	background-image: url('../assets/bulb_green.png');
 	-webkit-animation: bulb_glow_green linear 5s;
 	-moz-animation: bulb_glow_green linear 5s;
@@ -632,8 +610,7 @@ export default {
 	-ms-animation: bulb_glow_green linear 5s;
 	animation: bulb_glow_green linear 5s;
 }
-
-@-webkit-keyframes bulb_glow_green {
+ @-webkit-keyframes bulb_glow_green {
 	0%{
 		background-image: url('../assets/bulb.png');
 		opacity: 0;
@@ -698,8 +675,7 @@ export default {
 		opacity: 1;
 	}
 }
-
-.bulb-glow-pink {
+ .bulb-glow-pink {
 	background-image: url('../assets/bulb_pink.png');
 	-webkit-animation: bulb_glow_pink linear 5s;
 	-moz-animation: bulb_glow_pink linear 5s;
@@ -707,8 +683,7 @@ export default {
 	-ms-animation: bulb_glow_pink linear 5s;
 	animation: bulb_glow_pink linear 5s;
 }
-
-@-webkit-keyframes bulb_glow_pink {
+ @-webkit-keyframes bulb_glow_pink {
 	0%{
 		background-image: url('../assets/bulb.png');
 		opacity: 0;
@@ -773,8 +748,7 @@ export default {
 		opacity: 1;
 	}
 }
-
-.bulb-glow-orange {
+ .bulb-glow-orange {
 	background-image: url('../assets/bulb_orange.png');
 	-webkit-animation: bulb_glow_orange linear 5s;
 	-moz-animation: bulb_glow_orange linear 5s;
@@ -782,8 +756,7 @@ export default {
 	-ms-animation: bulb_glow_orange linear 5s;
 	animation: bulb_glow_orange linear 5s;
 }
-
-@-webkit-keyframes bulb_glow_orange {
+ @-webkit-keyframes bulb_glow_orange {
 	0%{
 		background-image: url('../assets/bulb.png');
 		opacity: 0;
@@ -848,9 +821,7 @@ export default {
 		opacity: 1;
 	}
 }
-
-
-/*after music*/
+ /*after music*/
 .bulb-glow-yellow-after {
 	background-image: url('../assets/bulb_yellow.png');
 	-webkit-animation: bulb_glow_yellow_after linear 1s infinite;
@@ -859,8 +830,7 @@ export default {
 	-ms-animation: bulb_glow_yellow_after linear 1s infinite;
 	animation: bulb_glow_yellow_after linear 1s infinite;
 }
-
-@-webkit-keyframes bulb_glow_yellow_after {
+ @-webkit-keyframes bulb_glow_yellow_after {
 	0%{
 		background-image: url('../assets/bulb.png');
 	}
@@ -915,8 +885,7 @@ export default {
 		background-image: url('../assets/bulb.png');
 	}
 }
-
-.bulb-glow-red-after {
+ .bulb-glow-red-after {
 	background-image: url('../assets/bulb_red.png');
 	-webkit-animation: bulb_glow_red_after linear 1.2s infinite;
 	-moz-animation: bulb_glow_red_after linear 1.2s infinite;
@@ -924,8 +893,7 @@ export default {
 	-ms-animation: bulb_glow_red_after linear 1.2s infinite;
 	animation: bulb_glow_red_after linear 1.2s infinite;
 }
-
-@-webkit-keyframes bulb_glow_red_after {
+ @-webkit-keyframes bulb_glow_red_after {
 	0%{
 		background-image: url('../assets/bulb.png');
 	}
@@ -980,8 +948,7 @@ export default {
 		background-image: url('../assets/bulb.png');
 	}
 }
-
-.bulb-glow-blue-after {
+ .bulb-glow-blue-after {
 	background-image: url('../assets/bulb_blue.png');
 	-webkit-animation: bulb_glow_blue_after linear 1.4s infinite;
 	-moz-animation: bulb_glow_blue_after linear 1.4s infinite;
@@ -989,8 +956,7 @@ export default {
 	-ms-animation: bulb_glow_blue_after linear 1.4s infinite;
 	animation: bulb_glow_blue_after linear 1.4s infinite;
 }
-
-@-webkit-keyframes bulb_glow_blue_after {
+ @-webkit-keyframes bulb_glow_blue_after {
 	0%{
 		background-image: url('../assets/bulb.png');
 	}
@@ -1053,8 +1019,7 @@ export default {
 	-ms-animation: bulb_glow_green_after linear 1.8s infinite;
 	animation: bulb_glow_green_after linear 1.8s infinite;
 }
-
-@-webkit-keyframes bulb_glow_green_after {
+ @-webkit-keyframes bulb_glow_green_after {
 	0%{
 		background-image: url('../assets/bulb.png');
 	}
@@ -1065,8 +1030,7 @@ export default {
 		background-image: url('../assets/bulb.png');
 	}
 }
-
-@-moz-keyframes bulb_glow_green_after {
+ @-moz-keyframes bulb_glow_green_after {
 	0%{
 		background-image: url('../assets/bulb.png');
 	}
@@ -1118,8 +1082,7 @@ export default {
 	-ms-animation: bulb_glow_pink_after linear 2s infinite;
 	animation: bulb_glow_pink_after linear 2s infinite;
 }
-
-@-webkit-keyframes bulb_glow_pink_after {
+ @-webkit-keyframes bulb_glow_pink_after {
 	0%{
 		background-image: url('../assets/bulb.png');
 	}
@@ -1182,8 +1145,7 @@ export default {
 	-ms-animation: bulb_glow_orange_after linear 2.2s infinite;
 	animation: bulb_glow_orange_after linear 2.2s infinite;
 }
-
-@-webkit-keyframes bulb_glow_orange_after {
+ @-webkit-keyframes bulb_glow_orange_after {
 	0%{
 		background-image: url('../assets/bulb.png');
 	}
@@ -1241,16 +1203,14 @@ export default {
 audio {
 	display: none;
 }
-
-.bannar {
+ .bannar {
 	max-width: 100%;
 	-webkit-transform:translate(0px,-500px);
 	-moz-transform:translate(0px,-500px);
 	-o-transform:translate(0px,-500px);
 	-ms-transform:translate(0px,-500px);
 	transform:translate(0px,-500px);
-
-}
+ }
 .bannar-come {
 	-webkit-animation: bannar_come linear 6s;
 	-webkit-transform:translate(0px,0px);
@@ -1348,8 +1308,7 @@ audio {
 		transform:translate(0px,0px);
 	}
 }
-
-.balloons {
+ .balloons {
 	position: fixed;
 	bottom: -200px;
 	opacity: 0.6;
@@ -1522,10 +1481,10 @@ audio {
 		transform: rotate(-20deg);
 	}
 }
-
-.balloon-border{
+ .balloon-border{
 	position: fixed;
 	top:100%;
+	left:0;
 	opacity: 0.5;
 	z-index: 9999;
 }
@@ -1534,11 +1493,10 @@ audio {
 	bottom: 0;
 	padding:10px 0px 10px 0px;
 }
-#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story {
+#play, #bannar_coming, #balloons_flying,#wish_message,#story {
 	display: none;
 }
-
-.cake-cover {
+ .cake-cover {
 	margin-top: 50px;
 }
 .message {
@@ -1554,8 +1512,7 @@ audio {
 	display: none;
 	font-weight: bold;
 }
-
-.btn-primary {
+ .btn-primary {
         border-color: #466baf;
         padding: 10px;
         text-transform: uppercase;
@@ -1573,7 +1530,5 @@ audio {
         color: #fff;
         background-color: #466baf;
     }
-
-
-
-</style>
+ </style>
+ 

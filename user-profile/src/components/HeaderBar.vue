@@ -76,7 +76,7 @@ export default {
     return {
       drawer: null,
       items: [
-        { title: 'Home', icon: 'dashboard', path:'/home'},
+        // { title: 'Home', icon: 'dashboard', path:'/home'},
         { title: 'Birthday', icon: 'cake', path:'/happy-birthday' },
         { title: 'Friends', icon: 'people', path:'/friends' },
         { title: 'Photography', icon: 'photo_camera', path:'/photos' },

@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Home from '@/components/HomePage.vue'
+import WishCard from '@/components/WishCard.vue'
 import Birthday from '@/components/Birthday.vue'
 import HeaderBar from '@/components/HeaderBar.vue'
 import Photography from '@/components/Photography.vue'
@@ -11,19 +11,19 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/happy-birthday',
       name: 'Birthday',
       component: Birthday
     },
     // {
-    //   path: '/about',
-    //   name: 'HeaderBar',
-    //   component: HeaderBar
+    //   path: '/home',
+    //   name: 'Home',
+    //   component: HomePage
     // },
+    {
+      path: '/happy-birthday',
+      name: 'happy-birthday',
+      component: WishCard
+    },
     {
       path: '/photos',
       name: 'Photography',
