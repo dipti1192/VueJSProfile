@@ -40,32 +40,34 @@ export default {
   name: 'Friends',
   data () {
       return {
-        card_text: 'Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.',
         photos: [
             { title: 'Dipti Prabhavale', icon: 'dipti.png',id:'1'},
-            { title: 'Dhiraj Mali', icon: 'Dhirya.jpg',id:'2'},
+            { title: 'Dhiraj Mali', icon: 'Dhirya.jpg',id:'2',
+              msg:`जल्लोश आहे गावाचा,
+              कारण वाढदिवस आहे,
+              माझ्या भावाचा!!!
+              वाढदिवसाच्या हार्दीक शुभेच्छा…!`
+            },
             { title: 'Ketan Kumbhar', icon: 'Friends.jpg',id:'3'},
             { title: 'Rushi Paradkar', icon: 'Rushi.jpg',id:'4',
               msg: `20 odd years have past with you and it’s been a while 
               I never seen you but feels like years.....waiting to meet you and relive those memories again.... 
               wish you happy birthday bro... cheers mate 🍻`
             },
-            { title: 'Urmila', icon: 'Urmila.jpg',id:'5',
+            { title: 'Urmila Waradkar', icon: 'Urmila.jpg',id:'5',
               msg: `Dear Aniket,
               You are going to start a new year of your life and I hope this coming year will 
               bring every success you deserve.Wishing you a day that is as special in every way as you are! `
             },
-            // { title: 'Pranshul', icon: 'Pranshul.jpg',id:'6',
-            //   msg: `20 odd years have past with you and it’s 
-            //   been a while I never seen you but feels like years.....
-            //   waiting to meet you and relive those memories again.... 
-            //   wish you happy birthday bro... cheers mate `
-            // },
-            { title: 'Pranshul', icon: 'Pranshul.jpg',id:'7',
+            { title: 'Shreyasee Chougule', icon: 'Shreyasee.jpg',id:'6',
+              msg: `Wishing you a day filled with happiness and a year filled with joy...
+                    Happy birthday Aniket 🍫🎉🎁💐🎂 `
+            },
+            { title: 'Pranshul Chitransh', icon: 'Pranshul.jpg',id:'7',
               msg: `Here's to nights we don't remember with people we won't forget.
               Step up and put your party shoes on. It's your birthday dammit. Cheers!🍻`
             },
-            { title: 'Sachin', icon: 'Sachin.jpg',id:'8',
+            { title: 'Sachin Jagtap', icon: 'Sachin.jpg',id:'8',
               msg: `14 ऑक्टोबर रोजी  
               महापुरे घराण्यात आनंदी आनंद झाला.... 
               कारण घराण्यात रोमॅन्टीक हीरो 😎 अनिकेत जन्मास आला तसंच मनानं दिलदार... 
@@ -116,5 +118,6 @@ export default {
     text-align: left;
     font-size: 30px;
     font-weight: 800;
+    color: #006064;
   }
 </style>
