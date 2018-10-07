@@ -6,7 +6,7 @@
     </div>
     <div class="box">
         <img
-          v-bind:src="require('../assets/aniket.jpg')"
+          v-bind:src="require('../assets/Aniket1.jpg')"
           width="500"
           height="500"
         >
