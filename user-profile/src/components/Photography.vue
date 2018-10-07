@@ -1,32 +1,15 @@
 <template>
-  <v-layout row style="padding:50px;">
-    <v-flex xs12>
-      <v-card>
-        <v-toolbar flat>
-          <v-btn icon>
-            <v-icon>camera</v-icon>
-          </v-btn>
-          <v-toolbar-title>Clicks</v-toolbar-title>
-        </v-toolbar>
-        <v-subheader>May</v-subheader>
-        <v-container fluid grid-list-sm>
-          <v-layout row wrap>
-            <v-flex v-for="photo in photos" :key="photo.id" xs4>
-              <img :src="getImgURL(photo.icon)" class="image" alt="lorem" width="100%" height="100%">
-            </v-flex>
-          </v-layout>
-        </v-container>
-        <v-subheader>June</v-subheader>
-        <v-container fluid grid-list-sm>
-          <v-layout row wrap>
-            <v-flex v-for="photo in photos" :key="photo.id" xs4>
-              <img :src="getImgURL(photo.icon)" class="image" alt="lorem" width="100%" height="100%">
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </v-card>
-    </v-flex>
-  </v-layout>
+  
+    <v-carousel>
+      <v-carousel-item
+        v-for="(photo,i) in photos"
+        :key="photo.id"
+        :src="getImgURL(photo.icon)"
+        reverse-transition="fade"
+        transition="fade"
+      ></v-carousel-item>
+    </v-carousel>
+
 </template>
 <script>
 export default {
