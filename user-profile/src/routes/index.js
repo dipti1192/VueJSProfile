@@ -4,6 +4,7 @@ import Birthday from '@/components/Birthday.vue'
 import HeaderBar from '@/components/HeaderBar.vue'
 import Photography from '@/components/Photography.vue'
 import Friends from '@/components/Friends.vue'
+import About from '@/components/About.vue'
 import Router from 'vue-router'
 Vue.use(Router)
 
@@ -14,11 +15,11 @@ export default new Router({
       name: 'Birthday',
       component: Birthday
     },
-    // {
-    //   path: '/home',
-    //   name: 'Home',
-    //   component: HomePage
-    // },
+    {
+      path: '/about',
+      name: 'About',
+      component: About
+    },
     {
       path: '/happy-birthday',
       name: 'happy-birthday',

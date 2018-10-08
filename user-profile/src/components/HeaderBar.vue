@@ -80,7 +80,7 @@ export default {
         { title: 'Birthday', icon: 'cake', path:'/happy-birthday' },
         { title: 'Friends', icon: 'people', path:'/friends' },
         { title: 'Photography', icon: 'photo_camera', path:'/photos' },
-        { title: 'Memories', icon: 'question_answer', path:'/memories' }
+        { title: 'About', icon: 'question_answer', path:'/about' }
       ]
     }
   },

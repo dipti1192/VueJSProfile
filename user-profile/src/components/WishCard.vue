@@ -15,7 +15,7 @@
 </template>
 <script>
 export default {
-  name: 'Home',
+  name: 'WishCard',
   data () {
       return {
         
