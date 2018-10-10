@@ -105,7 +105,7 @@
 					<p>don't worry</p>
 					<p>don't be afraid</p>
 					<p>because...</p>
-					<p>you are not alone in this world</p>
+					<p>you are not alone in this journey</p>
 					<p>because...</p>
 					<p>this year will be better</p>
 					<p>and I hope</p>

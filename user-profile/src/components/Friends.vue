@@ -56,6 +56,14 @@ export default {
                     I never seen you but feels like years.....waiting to meet you and relive those memories again.... 
                     wish you happy birthday bro... cheers mate 🍻`
             },
+            {
+              title: 'Dhanashree Nimbalkar', icon: 'Dhanshree.jpg',id:'11',
+              msg: `You are one, who always supporting me, encouraging me, listening to me... 
+                  Wish you many many happy returns of the day...
+                  May your birthday be filled with the warmth of sunshine, the happiness of smile..
+                  Best luck for your future dear ..
+                  And PARTY HARD...😜🍻🍻`
+            },
             { title: 'Urmila Waradkar', icon: 'Urmila.jpg',id:'5',
               msg: `Dear Aniket,
                     You are going to start a new year of your life and I hope this coming year will 
@@ -118,6 +126,7 @@ export default {
                   Keep rocking the same way and let’s continue to have fun for the rest of this year. 😊 
                   A very happy birthday and have a great year ahead 😊`
             },
+            
         ] 
       }
   },
