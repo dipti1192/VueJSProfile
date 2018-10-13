@@ -3,9 +3,20 @@
     <HeaderBar style="width:100%;height:100%;position:fixed;z-index:1"></HeaderBar>
     <router-view style="position: absolute;width:100%;height:100%;">
     </router-view>
-    <!--<footer>
-      b
-    </footer>-->
+    <!--<v-footer style="bottom:0;width:100%;position:fixed;z-index:1"
+      height="10"
+    >
+    <v-card
+      class="flex"
+      flat
+      tile
+    >
+
+      <v-card-actions class="grey darken-1 justify-center">
+        &copy;2018 — <strong>Vuetify</strong>
+      </v-card-actions>
+    </v-card>
+  </v-footer>-->
   </v-container>
 </template>
 
